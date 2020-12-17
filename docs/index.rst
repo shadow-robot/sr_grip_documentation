@@ -12,7 +12,6 @@ GRIP contains a GUI that we developped in order to guide users through all the s
 
 .. toctree::
    :maxdepth: 2
-   :caption: Overview
+   :caption: Content
    
    user_guide/1_installing_grip
-   user_guide/2_test

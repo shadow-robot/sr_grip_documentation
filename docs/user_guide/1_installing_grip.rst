@@ -46,8 +46,8 @@ You can change `<container_name>` by the name you want to give to the container 
 
    bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=GRIP_test
 
-
-**If you have a Nvidia card but are running on the Xorg drivers, go to the other subsection!**
+.. note::
+    If you have a Nvidia card but are running on the Xorg drivers, go to the other subsection!
 
 You don't have a Nvidia card
 *****************************

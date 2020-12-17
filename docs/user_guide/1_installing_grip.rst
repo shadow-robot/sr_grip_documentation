@@ -51,7 +51,8 @@ You can change `<container_name>` by the name you want to give to the container 
 
 You don't have a Nvidia card
 *****************************
-If you don't have a Nvidia graphic card or if you do and don't use their drivers, please run
+If you don't have a Nvidia graphic card or if you do and don't use their drivers, please run:
+
 .. prompt:: bash $
 
    bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=false tag=kinetic-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>

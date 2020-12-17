@@ -24,31 +24,38 @@ We have created a one-liner that is able to install Docker, download the image a
 Prerequisite
 *************
 We **strongly** advise to run the one-liner on a machine without any version of docker installed. If you have never installed it, you can skip to the next subsection. If you are already using Docker, please be aware that the resulting container *might* not work. If it is the case, you can run the following lines:
-```
-sudo apt purge -y docker-engine docker docker.io docker-ce
-sudo apt autoremove -y --purge docker-engine docker docker.io docker-ce
-```
+
+.. prompt:: bash $
+
+   sudo apt purge -y docker-engine docker docker.io docker-ce
+   sudo apt autoremove -y --purge docker-engine docker docker.io docker-ce
+
 These instructions are uninstalling docker but should not remove any of the containers already stored on your machine.
 
 You have a Nvidia card
 ***********************
 If the machine you are using to run the framework has a Nvidia card **and the Nvidia drivers are on**, then execute the following line
-```bash
-bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>
-```
+
+.. prompt:: bash $
+
+   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>
+
 You can change `<container_name>` by the name you want to give to the container that you are going to use. For instance, if you want your container to be named *GRIP_test*, then you would need to run the following command:
-```bash
-bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=GRIP_test
-```
+
+.. prompt:: bash $
+
+   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=GRIP_test
+
 
 **If you have a Nvidia card but are running on the Xorg drivers, go to the other subsection!**
 
 You don't have a Nvidia card
 *****************************
 If you don't have a Nvidia graphic card or if you do and don't use their drivers, please run
-```bash
-bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=false tag=kinetic-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>
-```
+.. prompt:: bash $
+
+   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=false tag=kinetic-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>
+
 You can change `<container_name>` by the name you want to give to the container that you are going to use.
 
 Future releases

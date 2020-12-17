@@ -32,7 +32,7 @@ project = u'The Grasping Robot Integration and Prototyping (GRIP) framework'
 copyright = u'2020, Shadow Robot Company'
 author = u'Shadow Robot Company'
 
-github_doc_root = 'https://github.com/shadow-robot/sr_grip_documentation/tree/master/docs/index.md'
+github_doc_root = 'https://github.com/shadow-robot/sr_grip_documentation/tree/master/docs/index.rst'
 
 # The short X.Y version
 version = u''

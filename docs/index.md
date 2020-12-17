@@ -7,5 +7,4 @@ The Grasping Robot Integration & Prototyping (GRIP) framework is a robot-agnosti
 GRIP contains a GUI that we developped in order to guide users through all the steps from robot integration to task execution. This GUI comprises two mains parts: robot integration and task design/execution.
 
 ## Content
-## Tasks
 * [Installing GRIP](user_guide/1_installing_grip.md)

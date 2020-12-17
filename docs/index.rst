@@ -15,14 +15,4 @@ GRIP contains a GUI that we developped in order to guide users through all the s
    :caption: Overview
    
    user_guide/1_installing_grip
-   
-.. toctree::
-    :maxdepth: 2
-    :numbered:
-    :titlesonly:
-    :glob:
-    :hidden:
-
-    intro.rst
-    chapter1.rst
-    chapter2.rst
+   user_guide/2_test

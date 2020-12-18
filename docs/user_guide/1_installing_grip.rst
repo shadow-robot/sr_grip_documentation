@@ -32,32 +32,20 @@ We **strongly** advise to run the one-liner on a machine without any version of 
 
 These instructions are uninstalling docker but should not remove any of the containers already stored on your machine.
 
-You have a Nvidia card
-***********************
 If the machine you are using to run the framework has a Nvidia card **and the Nvidia drivers are on**, then execute the following line
 
 .. prompt:: bash $
 
-   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>
+   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-release reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=<container_name>
 
 You can change `<container_name>` by the name you want to give to the container that you are going to use. For instance, if you want your container to be named *GRIP_test*, then you would need to run the following command:
 
 .. prompt:: bash $
 
-   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-nvidia-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=GRIP_test
+    bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-release reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=GRIP_test
 
 .. note::
-    If you have a Nvidia card but are running on the Xorg drivers, go to the other subsection!
-
-You don't have a Nvidia card
-*****************************
-If you don't have a Nvidia graphic card or if you do and don't use their drivers, please run:
-
-.. prompt:: bash $
-
-   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=false tag=kinetic-release reinstall=true sim_icon=false image=shadowrobot/sr_grip container_name=<container_name>
-
-You can change `<container_name>` by the name you want to give to the container that you are going to use.
+    If you don't have a Nvidia graphic card or are running on the Xorg drivers, please use **nvidia_docker=false**
 
 Future releases
 ###############

@@ -15,3 +15,5 @@ GRIP contains a GUI that we developped in order to guide users through all the s
    :caption: Content
    
    user_guide/1_installing_grip
+
+You can access GRIP's source code `here <https://github.com/shadow-robot/sr_grip>`_.

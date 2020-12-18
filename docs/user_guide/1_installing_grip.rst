@@ -52,11 +52,13 @@ Troubleshooting
 If you encounter an error saying
 
 .. prompt:: bash $
+
    /dev/fd/63: line 246:  1728 Segmentation fault      (core dumped) pip3 install --user -r ansible/data/ansible/requirements.txt
 
 please run 
 
 .. prompt:: bash $
+
   rm -rf .local
 
 and re-run the one-liner. 

@@ -47,6 +47,20 @@ You can change `<container_name>` by the name you want to give to the container 
 .. note::
     If you don't have a Nvidia graphic card or are running on the Xorg drivers, please use **nvidia_docker=false**
 
+Troubleshooting
+***************
+If you encounter an error saying
+
+.. prompt:: bash $
+   /dev/fd/63: line 246:  1728 Segmentation fault      (core dumped) pip3 install --user -r ansible/data/ansible/requirements.txt
+
+please run 
+
+.. prompt:: bash $
+  rm -rf .local
+
+and re-run the one-liner. 
+
 Future releases
 ###############
 For now, the docker that you have downloaded contains Ubuntu 16.04 and ROS Kinetic. We are currently working on the release of the framework using Ubuntu 18.04 and ROS Melodic. Stay tuned!

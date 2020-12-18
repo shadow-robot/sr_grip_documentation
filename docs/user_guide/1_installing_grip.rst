@@ -49,19 +49,11 @@ You can change `<container_name>` by the name you want to give to the container 
 
 Troubleshooting
 ***************
-If you encounter an error saying
+If you encounter an error saying:
 
-.. prompt:: bash $
+**/dev/fd/63: line 246:  1728 Segmentation fault      (core dumped) pip3 install --user -r ansible/data/ansible/requirements.txt**
 
-   /dev/fd/63: line 246:  1728 Segmentation fault      (core dumped) pip3 install --user -r ansible/data/ansible/requirements.txt
-
-please run 
-
-.. prompt:: bash $
-
-  rm -rf .local
-
-and re-run the one-liner. 
+please run **rm -rf .local** and re-run the one-liner. 
 
 Future releases
 ###############

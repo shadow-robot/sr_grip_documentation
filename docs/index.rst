@@ -13,7 +13,7 @@ GRIP contains a GUI that we developped in order to guide users through all the s
 Demo videos
 ###########
 
-Videos of use cases implemented with GRIP are available `here <https://lorejam.wixsite.com/crisp/videos>`_.
+Videos of use cases implemented with GRIP are available `here <https://youtu.be/LBYjGEU9pss>`_, `here <https://youtu.be/ZnLZD31wR8s>`_ and `here <https://youtu.be/fGmIWvfFVgw>`_.
 
 Source code
 ###########

@@ -20,7 +20,7 @@ Source code
 
 You can access GRIP's source code `here <https://github.com/shadow-robot/sr_grip>`_.
 
-Table of content 
+Table of contents 
 ################
 
 .. toctree::

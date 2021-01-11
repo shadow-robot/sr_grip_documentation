@@ -1,3 +1,4 @@
+.. _install-instructions:
 *************************
 Installing the framework
 *************************
@@ -52,13 +53,14 @@ When running the one-liner, if you encounter an error saying:
 
 **/dev/fd/63: line 246:  1728 Segmentation fault      (core dumped) pip3 install --user -r ansible/data/ansible/requirements.txt**
 
-please run **rm -rf .local** (make sure to make a copy of important files if you have any) and re-run the one-liner.
+please run :code:`rm -rf ~/.local` (make sure to make a copy of important files if you have any) and re-run the one-liner.
 
 Running the container
 #####################
 
 **We are going to assume in this section that you named your container *GRIP_test* in the one-liner!**
-At this stage, you should have both a docker image and container created for you. First, let's make sure that's the case. You should see the following
+|
+|At this stage, you should have both a docker image and container created for you. First, let's make sure that's the case. You should see the following
 
 .. prompt:: bash
 

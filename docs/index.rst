@@ -28,3 +28,4 @@ Table of contents
    :caption: Content
 
    user_guide/installing_grip
+   user_guide/getting_started

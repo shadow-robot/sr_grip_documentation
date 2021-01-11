@@ -58,11 +58,11 @@ please run :code:`rm -rf ~/.local` (make sure to make a copy of important files 
 Running the container
 #####################
 
-**We are going to assume in this section that you named your container *GRIP_test* in the one-liner!**
+| **We are going to assume in this section that you named your container *GRIP_test* in the one-liner!**
 |
-|At this stage, you should have both a docker image and container created for you. First, let's make sure that's the case. You should see the following
+| At this stage, you should have both a docker image and container created for you. First, let's make sure that's the case. You should see the following
 
-.. prompt:: bash
+.. code-block:: bash
 
     $ docker ps -a
     CONTAINER ID   IMAGE                                       ...   NAMES
@@ -74,9 +74,8 @@ To start the container, you just need to run
 
     docker start GRIP_test
 
-A new `Terminator <https://gnometerminator.blogspot.com/p/introduction.html>`_ window will pop up, and will allow you to navigate inside the container.
-**None** of the operations you are going to run in this terminal will affect your native Ubuntu session.
-For instance if you install a text editor in the container, you won't be able to run in in your graphic Ubuntu session! So feel free to install and configure your favorite text editor and everything that you need to work efficiently.
+| A new `Terminator <https://gnometerminator.blogspot.com/p/introduction.html>`_ window will pop up, and will allow you to navigate inside the container. **None** of the operations you are going to run in this terminal will affect your native Ubuntu session.
+| For instance if you install a text editor in the container, you won't be able to run in in your graphic Ubuntu session! So feel free to install and configure your favorite text editor and everything that you need to work efficiently.
 
 Future releases
 ###############

@@ -15,7 +15,7 @@ In order to run our software and the ROS software stack you will need to meet so
 
 The most important one is to have a fast HDD or an SSD.
 
-Downloading the framework
+Downloading the container
 #########################
 
 We have created a one-liner that is able to install Docker, download the image and create a new container for you. To use it, you first need to have a PC running Ubuntu (16.04 or 18.04 tested).
@@ -54,16 +54,27 @@ When running the one-liner, if you encounter an error saying:
 
 please run **rm -rf .local** (make sure to make a copy of important files if you have any) and re-run the one-liner.
 
-Running the framework
+Running the container
 #####################
 
-At this stage, you should have both a docker image and container created for you. Assuming that you named you container *GRIP_test* in the one-liner, you should see the following
+**We are going to assume in this section that you named your container *GRIP_test* in the one-liner!**
+At this stage, you should have both a docker image and container created for you. First, let's make sure that's the case. You should see the following
 
 .. prompt:: bash $
 
     docker ps -a
     CONTAINER ID   IMAGE                                       ...   NAMES
-    3947e1a08b16   shadowrobot/grip_framework:kinetic-devel    ...   GRIP_test
+    3447e1i08b16   shadowrobot/grip_framework:kinetic-devel    ...   GRIP_test
+
+To start the container, you just need to run
+
+.. prompt:: bash $
+
+    docker start GRIP_test
+
+A new `Terminator <https://gnometerminator.blogspot.com/p/introduction.html>`_ window will pop up, and will allow you to navigate inside the container.
+**None** of the operations you are going to run in this terminal will affect your native Ubuntu session.
+For instance if you install a text editor in the container, you won't be able to run in in your graphic Ubuntu session! So feel free to install and configure your favorite text editor and everything that you need to work efficiently.
 
 Future releases
 ###############

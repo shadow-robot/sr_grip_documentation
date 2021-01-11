@@ -20,11 +20,11 @@ Source code
 
 You can access GRIP's source code `here <https://github.com/shadow-robot/sr_grip>`_.
 
-Table of contents 
+Table of contents
 ################
 
 .. toctree::
    :maxdepth: 2
    :caption: Content
-   
-   user_guide/1_installing_grip
+
+   user_guide/installing_grip

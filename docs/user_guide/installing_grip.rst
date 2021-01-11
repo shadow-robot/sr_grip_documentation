@@ -60,9 +60,9 @@ Running the container
 **We are going to assume in this section that you named your container *GRIP_test* in the one-liner!**
 At this stage, you should have both a docker image and container created for you. First, let's make sure that's the case. You should see the following
 
-.. prompt:: bash $
+.. prompt:: bash
 
-    docker ps -a
+    $ docker ps -a
     CONTAINER ID   IMAGE                                       ...   NAMES
     3447e1i08b16   shadowrobot/grip_framework:kinetic-devel    ...   GRIP_test
 

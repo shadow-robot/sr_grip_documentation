@@ -50,4 +50,4 @@ What is GRIP
 | In order to simplify all the steps necessary to run a robot task, we have implemented an intuitive and reactive Graphical User Interface (GUI) for both the integration stage and task design. If you want to have a look at the code, all related files are located in the `grip_api <https://github.com/shadow-robot/sr_grip/tree/kinetic-devel/grip_api>`_ package. The code corresponding to all the other components of this fraemwork, can be found in the `grip_core <https://github.com/shadow-robot/sr_grip/tree/kinetic-devel/grip_core>`_ package.
 | **Disclaimer: GRIP's focus is not to be highly performant, but rather to provide users a tool to easily reproduce their own setups and integrate components to screen them, before potentially integrating them to their existing optimised pipeline!**
 
-If everything is clear so far, you can move to the Tutorials.
+If everything is clear so far, you can move to the :ref:`tutorials <tutorials_list>`.

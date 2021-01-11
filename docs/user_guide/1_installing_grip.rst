@@ -62,9 +62,8 @@ At this stage, you should have both a docker image and container created for you
 .. prompt:: bash $
 
     docker ps -a
-
-CONTAINER ID   IMAGE                                                               COMMAND                  CREATED         STATUS                    PORTS     NAMES
-3947e1a08b16   shadowrobot/grip_framework:kinetic-devel                                                               "/usr/local/bin/entr…"                  Now         Created                         GRIP_test
+    CONTAINER ID   IMAGE                                       ...   NAMES
+    3947e1a08b16   shadowrobot/grip_framework:kinetic-devel    ...   GRIP_test
 
 Future releases
 ###############

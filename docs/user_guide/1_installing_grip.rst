@@ -15,9 +15,8 @@ In order to run our software and the ROS software stack you will need to meet so
 
 The most important one is to have a fast HDD or an SSD.
 
-Installing the framework
-#######################
-
+Downloading the framework
+#########################
 
 We have created a one-liner that is able to install Docker, download the image and create a new container for you. To use it, you first need to have a PC running Ubuntu (16.04 or 18.04 tested).
 
@@ -53,8 +52,21 @@ When running the one-liner, if you encounter an error saying:
 
 **/dev/fd/63: line 246:  1728 Segmentation fault      (core dumped) pip3 install --user -r ansible/data/ansible/requirements.txt**
 
-please run **rm -rf .local** (make sure to make a copy of important files if you have any) and re-run the one-liner. 
+please run **rm -rf .local** (make sure to make a copy of important files if you have any) and re-run the one-liner.
+
+Running the framework
+#####################
+
+At this stage, you should have both a docker image and container created for you. Assuming that you named you container *GRIP_test* in the one-liner, you should see the following
+
+.. prompt:: bash $
+
+    docker ps -a
+
+CONTAINER ID   IMAGE                                                               COMMAND                  CREATED         STATUS                    PORTS     NAMES
+3947e1a08b16   shadowrobot/grip_framework:kinetic-devel                                                               "/usr/local/bin/entr…"                  Now         Created                         GRIP_test
 
 Future releases
 ###############
+
 For now, the docker that you have downloaded contains Ubuntu 16.04 and ROS Kinetic. We are currently working on the release of the framework using Ubuntu 18.04 and ROS Melodic. Stay tuned!

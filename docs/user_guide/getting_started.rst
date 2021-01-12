@@ -50,4 +50,17 @@ What is GRIP
 | In order to simplify all the steps necessary to run a robot task, we have implemented an intuitive and reactive Graphical User Interface (GUI) for both the integration stage and task design. If you want to have a look at the code, all related files are located in the `grip_api <https://github.com/shadow-robot/sr_grip/tree/kinetic-devel/grip_api>`_ package. The code corresponding to all the other components of this fraemwork, can be found in the `grip_core <https://github.com/shadow-robot/sr_grip/tree/kinetic-devel/grip_core>`_ package.
 | **Disclaimer: GRIP's focus is not to be highly performant, but rather to provide users a tool to easily reproduce their own setups and integrate components to screen them, before potentially integrating them to their existing optimised pipeline!**
 
+Integration stage
+*****************
+| Interfacing a robot is the first step required to program it. For this reason, GRIP features several non-exclusive integration modalities allowing you to re-use already existing components, and thus saving you time. If you start from scratch, no worries, the other pages of the documentation should greatly help you!
+| Before going into more details in the :ref:`tutorials <tutorials_list>`, we provide here a quick overview of the GUI specifically dedicated to help you interfacing hardware and/or software. In order to start GRIP, you first need to run
+
+.. prompt:: bash $
+
+    roslaunch grip_api start_framework.launch
+
+You should have the following GUI appearing (without the annotations obviously).
+
+.. image:: ../img/annotated_empty_config.png
+
 If everything is clear so far, you can move to the :ref:`tutorials <tutorials_list>`.

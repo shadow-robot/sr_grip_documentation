@@ -1,4 +1,4 @@
-.. _creating_moveit_congif:
+.. _creating_moveit_config:
 *********************************
 Creating a MoveIt! config package
 *********************************

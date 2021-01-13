@@ -7,5 +7,13 @@ Tutorials
 
 | Each tutorial contains a link to the associated resource that might be needed depending on the user's level of knowledge. The list of resources can be found :ref:`here <resources_list>`.
 
+:ref:`Using the embedded simulation mode <make_simulation_compatible>`
+######################################################################
 
-| **In progress, will be uploaded shortly!**
+Integration stage
+#################
+
+* :ref:`Interfacing a robot via MoveIt! <integrate_with_moveit>`
+
+
+**In progress, the rest will be uploaded shortly!**

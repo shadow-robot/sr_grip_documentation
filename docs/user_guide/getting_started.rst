@@ -79,5 +79,6 @@ Once you have configured everything you need, you can start designing your task!
 
 Task design and execution
 *************************
+**Overview coming soon, stay tuned!**
 
 If everything is clear so far, you can move to the :ref:`tutorials <tutorials_list>`.

@@ -27,7 +27,7 @@ Instead of creating a moveit config package from scratch, we are going to start 
 
 .. prompt:: bash $
 
-    cd /home/projects/shadow/base
+    cd /home/projects/shadow_robot/base
     catkin_make
 
 If it does not finish successfully, it might be that the name of the fodler and the name you changed in :code:`package.xml` and :code:`CMakeLists.txt` don't match!

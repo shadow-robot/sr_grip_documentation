@@ -8,5 +8,6 @@ Resources
 | If you just want to read what is useful for your use-case, we advise you to follow the relevant :ref:`tutorials <tutorials_list>`, in which the corresponding resource will be linked to.
 
 * :ref:`Creating a MoveIt! configuration package <creating_moveit_config>`
+* :ref:`What is a ROS controller file <ros_controller_file>`
 
 | **In progress, the rest will be uploaded shortly!**

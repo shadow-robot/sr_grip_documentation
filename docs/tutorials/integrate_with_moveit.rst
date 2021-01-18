@@ -66,5 +66,17 @@ In order to avoid any error message **make sure** that the name of the controlle
 
 Physical robot
 **************
+| First, make sure to uncheck the :code:`simulation` box in the :code:`Robot interface` tab.
+| Now, if you want to run your physical robot (or a part of it, i.e only the arm) using MoveIt!, you must specify a hardware connection file for each part of the robot. This means that your robot must have a ROS `hardware interface <https://github.com/ros-controls/ros_control/wiki/hardware_interface>`_ implemented. For further information about ROS hardware interface, please see this :ref:`resource <hw_interface>`.
+| Depending on the implementation of your hardware interface, you might need different parameters, but you will at least need the **IP address of the robot**. Some examples of hardware connection files are provided :ref:`here <example_connection_files>`.
 
-To be added soon
+.. note::
+
+	GRIP provides natively a compatible hardware interface for Universal Robot arms.
+
+Testing the integration
+#######################
+| If everything has been properly configured, you should now have the :code:`Launch robot` button enabled. Click on it (or press :code:`Ctrl+L`). You should soon see either one or two windows appearing. If you are running the robot in simulation mode, you should first see a Gazebo window appearing, and then a `RViz <http://wiki.ros.org/rviz>`_ window. If you are running the real robot, you should only see the latter.
+| In the Rviz window, you should see a gizmo that allows you to change the joint state of the robots. In the :code:`MotionPlanning` docker window on the left of the Rviz Window, press on the :code:`Planning` tab, and hit on :code:`Plan and Execute`. You should see your robot moving to the target pose you previously set.
+
+.. image:: ../img/franka_rviz.png

@@ -10,5 +10,6 @@ Resources
 * :ref:`Creating a MoveIt! configuration package <creating_moveit_config>`
 * :ref:`Creating description files <creating_description_files>`
 * :ref:`What is a ROS controller file <ros_controller_file>`
+* :ref:`What is a ROS hardware interface <hw_interface>`
 
 | **In progress, the rest will be uploaded shortly!**

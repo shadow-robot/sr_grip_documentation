@@ -11,5 +11,6 @@ Resources
 * :ref:`Creating description files <creating_description_files>`
 * :ref:`What is a ROS controller file <ros_controller_file>`
 * :ref:`What is a ROS hardware interface <hw_interface>`
+* :ref:`Wrapping external code inside a ROS action/service server <wrap_code>`
 
 | **In progress, the rest will be uploaded shortly!**

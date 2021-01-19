@@ -14,6 +14,7 @@ Integration stage
 #################
 
 * :ref:`Interfacing a robot via MoveIt! <integrate_with_moveit>`
+* :ref:`Interfacing a robot via a launch file <integrate_with_launch>`
 
 
 **In progress, the rest will be uploaded shortly!**

@@ -9,7 +9,7 @@ Creating a MoveIt! configuration package
 
 1. Copy an existing moveit_config package
 ############################################
-Instead of creating a moveit config package from scratch, we are going to start from an existing one. First create an empty folder in :code:`/home/projects/shadow/base/src`, which name will be the name of the moveit config package (we advise you to make it end with *_moveit_config*) and copy the content of this `repository <https://github.com/ARQ-CRISP/template_moveit_config.git>`_ inside it. You can also initialize a repository if you want to keep it in git. Your folder should now contain two folders and two files, as follows:
+Instead of creating a MoveIt! configuration package from scratch, we are going to start from an existing one. First create an empty folder in :code:`/home/projects/shadow/base/src`, which name will be the name of the moveit config package (we advise you to make it end with *_moveit_config*) and copy the content of this `repository <https://github.com/ARQ-CRISP/template_moveit_config.git>`_ inside it. You can also initialize a repository if you want to keep it in git. Your folder should now contain two folders and two files, as follows:
 
 .. code-block:: bash
 
@@ -30,7 +30,7 @@ Instead of creating a moveit config package from scratch, we are going to start 
     cd /home/projects/shadow_robot/base
     catkin_make
 
-If it does not finish successfully, it might be that the name of the fodler and the name you changed in :code:`package.xml` and :code:`CMakeLists.txt` don't match!
+If it does not finish successfully, it might be that the name of the folder and the name you changed in :code:`package.xml` and :code:`CMakeLists.txt` don't match!
 
 3. Fit the content of the package to your robot
 ###############################################

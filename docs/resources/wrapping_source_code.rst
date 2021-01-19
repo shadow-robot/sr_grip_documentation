@@ -323,4 +323,8 @@ And here you are! You have successfully wrapped your code in a ROS service!
 ROS actions
 ###########
 
+Compatibility with GRIP
+#######################
+
+
 **Documentation in progress**

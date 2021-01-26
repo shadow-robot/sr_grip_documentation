@@ -54,4 +54,4 @@ Common steps
 
 Simulation
 **********
-You can integrate any compnent except for controllers (i.e. kinematics, motion planner and high level methods) in simulation mode!
+You can integrate any comppnent except for controllers (i.e. kinematics, motion planner and high level methods) in simulation mode! For more information see :ref:`here <make_simulation_compatible>`.

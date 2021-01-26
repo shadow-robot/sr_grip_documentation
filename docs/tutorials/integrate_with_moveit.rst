@@ -74,6 +74,8 @@ Physical robot
 
 	GRIP provides natively a compatible hardware interface for Universal Robot arms.
 
+| Note that you can also set a **.scene** file in the :code:`Collision scene` field that would provide a description of the environment.
+
 Testing the integration
 #######################
 | If everything has been properly configured, you should now have the :code:`Launch robot` button enabled. Click on it (or press :code:`Ctrl+L`). You should soon see either one or two windows appearing. If you are running the robot in simulation mode, you should first see a Gazebo window appearing, and then a `RViz <http://wiki.ros.org/rviz>`_ window. If you are running the real robot, you should only see the latter.

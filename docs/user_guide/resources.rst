@@ -12,6 +12,8 @@ Resources
 * :ref:`What is a ROS controller file <ros_controller_file>`
 * :ref:`What is a ROS hardware interface <hw_interface>`
 * :ref:`Creating custom msg files <create_msg>`
-* :ref:`Wrapping external code inside a ROS action/service server <wrap_code>`
+* :ref:`Creating a ROS service server <ros_services>`
+* :ref:`Creating a ROS action server <ros_actions>`
+* :ref:`Making ROS action/service server compatible with GRIP <wrap_code>`
 
 | **In progress, the rest will be uploaded shortly!**

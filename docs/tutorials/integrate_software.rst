@@ -38,15 +38,15 @@ Common steps
 1. Start the framework: :code:`roslaunch grip_api start_framework.launch`
 2. Set the URDF file, robot's composition and the MoveIt! configuration package (the latter is **optional** i.e. you don't need it to integrate your own software)
 3. Go to the editor in which you want to integrate your software in the tabs (:code:`Arm configuration`, :code:`Hand configuration` or :code:`Settings`)
-4. Create a new file in the selected by clicking on :code:`New` and save the file wherever you want
-5. In the margin, click on :code:`+` the symbol and enter the name of your software in the dialog
+4. Create a new file in the selected one by clicking on :code:`New` and save the file wherever you want
+5. In the margin, click on the :code:`+` symbol and enter the name of your software in the dialog
 6. In the file dialog, specify the C++ or Python file (you can change the filter at the bottom of the file dialog) corresponding to your server (either action or service)
 7. Still in the file dialog, specify the **.srv** or **.action** file that defines your service or action (you can change the filter at the bottom of the file dialog)
 8. A partially filled template will appear in the editor. Fill :code:`server_name` with the name you gave to your service or action. Fill :code:`node_type` with the name of your node (C++ version) or with the name of your python file (**with .py**). Add the number of possible outcomes of your server (**must be an integer greater or equal than 1**). In the following example, we pointed to this `action file <https://github.com/ARQ-CRISP/EZGripper/blob/master/ezgripper_driver/action/ActuateGripper.action>`_ and this `server <https://github.com/ARQ-CRISP/EZGripper/blob/master/ezgripper_driver/nodes/ezgripper_controller.py>`_.
 
 .. image:: ../img/external_controller.png
 
-9. Hit the :code:`Save` button in the editor and here you are, your component is now integrated (i.e. you can see a state in the :code:`Task editor` tab that corresponds to your code).
+9. Hit the :code:`Save` button in the editor and here you are, your component is now integrated (i.e. you can see a state in the :code:`Task editor` tab that corresponds to your code). It means that your software will be run for you automatically!
 
 .. note::
 

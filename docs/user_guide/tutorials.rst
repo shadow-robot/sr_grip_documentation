@@ -20,7 +20,10 @@ Integration stage
 ********************************************************************
 
 :ref:`Integrating external software <integrate_software>`
-***********************************************************
+*********************************************************
+
+:ref:`Integrating a sensor <integrate_sensor>`
+**********************************************
 
 
 **In progress, the rest will be uploaded shortly!**

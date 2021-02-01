@@ -37,3 +37,30 @@ Procedure
 .. note::
 
 	Instead of defining the pose in the editor, you can directly refer to poses defined in the :ref:`pose editor <define_poses>`. For instance if a pose named :code:`sensor_pose` is defined in the pose editor, you can set :code:`initial_pose: sensor_pose`.
+
+Using a MoveIt! plugin
+######################
+| If you want MoveIt! to consider the data collected by an integrated sensor into the motion planning process, you can specify the corresponding YAML file inside the :code:`Sensor plugins` editor. The documentation about how to create your plugin can be found `here <https://moveit.ros.org/documentation/plugins/>`_. If you are using point clouds or depth maps and want to automatically generate corresponding occupancy maps, you can use the following templates.
+| Occupancy maps from point clouds:
+
+.. code-block:: yaml
+    sensors:
+      - {sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater, point_cloud_topic: <topic_name>, max_range: 5.0, point_subsample: 1, padding_offset: 0.1, padding_scale: 1.0, max_update_rate: 1.0, filtered_cloud_topic: <topic_name>}
+
+    octomap_frame: <sensor_frame>
+    octomap_resolution: 0.05
+    max_range: 5.0
+
+| Occupancy maps from depth images:
+
+.. code-block:: yaml
+    sensors:
+      - {sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater, image_topic: <topic_name>, queue_size: 5.0, near_clipping_plane_distance: 0.3, far_clipping_plane_distance: 5.0, shadow_threshold: 0.2, padding_scale: 4.0, padding_offset: 0.03, max_update_rate: 1.0, filtered_cloud_topic: <topic_name>}
+
+    octomap_frame: <sensor_frame>
+    octomap_resolution: 0.05
+    max_range: 5.0
+
+.. note::
+
+	Make sure to repalce the placeholders :code:`<topic_name>` and :code:`<sensor_frame>` by their real values.

@@ -36,13 +36,13 @@ If the machine you are using to run the framework has a Nvidia card **and the Nv
 
 .. prompt:: bash $
 
-   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-release reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=<container_name>
+   bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-v0.0.6 reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=<container_name>
 
 You can change `<container_name>` by the name you want to give to the container that you are going to use. For instance, if you want your container to be named *GRIP_test*, then you would need to run the following command:
 
 .. prompt:: bash $
 
-    bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-release reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=GRIP_test
+    bash <(curl -Ls bit.ly/run-aurora) docker_deploy product=hand_e nvidia_docker=true tag=kinetic-v0.0.6 reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=GRIP_test
 
 .. note::
     If you don't have a Nvidia graphic card or are running on the Xorg drivers, please use **nvidia_docker=false**

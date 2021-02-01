@@ -1,7 +1,7 @@
 .. _define_poses:
-*************************
-Define pre-recorded poses
-*************************
+***************************
+Defining pre-recorded poses
+***************************
 
 This page contains a step-by-step guide to define pre-recorded poses and cartesian poses for robot's end-effector that you can use in the task editor.
 

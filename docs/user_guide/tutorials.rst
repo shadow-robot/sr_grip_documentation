@@ -26,7 +26,15 @@ Integration stage
 **********************************************
 
 :ref:`Defining pre-recorded poses <define_poses>`
-**********************************************
+*************************************************
 
+:ref:`Defining pre-recorded joint states <define_js>`
+*****************************************************
+
+:ref:`Defining pre-recorded trajectories <define_traj>`
+*******************************************************
+
+Task design and execution
+#########################
 
 **In progress, the rest will be uploaded shortly!**

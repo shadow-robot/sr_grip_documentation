@@ -25,5 +25,8 @@ Integration stage
 :ref:`Integrating a sensor <integrate_sensor>`
 **********************************************
 
+:ref:`Defining pre-recorded poses <define_poses>`
+**********************************************
+
 
 **In progress, the rest will be uploaded shortly!**

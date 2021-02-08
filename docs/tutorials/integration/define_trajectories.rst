@@ -19,7 +19,7 @@ Procedure
     * :code:`interpolate_time`: Specifies how long (**in seconds**) the robot will take between the previous waypoint and this one
     * :code:`pause_time`: Specifies how long (**in seconds**) the robot should remain still once the waypoint is reached
 
-.. image:: ../img/joint_states.png
+.. image:: ../../img/joint_states.png
 
 .. note::
 

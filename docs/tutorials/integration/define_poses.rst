@@ -23,13 +23,13 @@ Simple pose
 ***********
 4. Fill in the :code:`position` and :code:`orientation` fields. If you want to declare the rotation of the pose using a quaternion, you can swap the :code:`r`, :code:`p` and :code:`y` keys to :code:`x`, :code:`y`, :code:`z` and :code:`w`
 
-.. image:: ../img/simple_pose.png
+.. image:: ../../img/simple_pose.png
 
 Robot's pose
 ************
 4. Below :code:`reference_frame`, write the name of the end-effector for which you want to define the pose (you can define several). Each end effector **must** have the fields :code:`position` and :code:`orientation`.
 
-.. image:: ../img/robot_pose.png
+.. image:: ../../img/robot_pose.png
 
 .. note::
 

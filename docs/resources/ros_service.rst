@@ -215,6 +215,7 @@ In our example, the :code:`generate_ee_position_server.py` looks like this:
         # Set the name of the service, specify which kind of srv will trigger it and what function will be run.
         # Change the name of the server with one that matches the content of your code, set the second argument to the name
         # of the srv file, and the last one should be the name of the function that runs your code.
+        service = rospy.Service("ee_position_generation", GeneratePosition, randomly_generate_end_effector_position)
         rospy.spin()
 
 Similarly, here is the content of :code:`generate_ee_position_server.cpp`:

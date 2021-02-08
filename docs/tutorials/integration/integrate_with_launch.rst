@@ -27,7 +27,7 @@ Procedure
 
     <arg name="arg_name" value="value"/>
 
-.. image:: ../img/launchfile.png
+.. image:: ../../img/launchfile.png
 
 5. Fill in the different editors that would allow GRIP to communicate with your robot. At least a controller for each robot part needs to be set. In our case we set this controller for the `arm <https://github.com/shadow-robot/sr_interface/blob/kinetic-devel/sr_robot_launch/config/ra_trajectory_controller.yaml>`_ and this one for the `hand <https://github.com/shadow-robot/sr_interface/blob/kinetic-devel/sr_robot_launch/config/rh_trajectory_controller.yaml>`_. Since this launch file already runs MoveIt!, we defined a planner for the group :code:`arm_and_hand`.
 6. You can click on the :code:`Launch button` and GRIP should be able to operate your robot.

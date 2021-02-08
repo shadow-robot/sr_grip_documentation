@@ -33,7 +33,7 @@ Common steps
 3. Set the composition of your robot(s), i.e. how many arms, hands and sensors need to be configured
 4. Set the path to the MoveIt! configuration package in the corresponding field. You should now see two editors allowing you to provide further configuration options (only if you need to).
 
-.. image:: ../img/franka_moveit_step1.png
+.. image:: ../../img/franka_moveit_step1.png
 
 5. In each hardware config tab (arm and hand), set the corresponding ROS controllers you want to use.
 6. Create (or load) a new motion planner config file for each part of the robot you want to operate with MoveIt!. Once the file is initialized in the editor, click on the + (in the margin) to add a new motion planner config. Follow the different dialogs and add the following information:
@@ -42,7 +42,7 @@ Common steps
     * :code:`number_plan_attempt`: Number of plans that the motion planner is going to compute before returning a potential solution. **Must be an integer**.
     * :code:`planning_max_time`: Maximum time given to the planner to compute a solution. **In seconds**.
 
-.. image:: ../img/planner_example.png
+.. image:: ../../img/planner_example.png
 
 At this point, you should not be able to launch the robot yet. In fact, some steps differ whether you want to run your robot in simulation or not. Let's go over them.
 

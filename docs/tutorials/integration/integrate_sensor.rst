@@ -28,7 +28,7 @@ Procedure
     * :code:`frame_id`: Name of the frame associated to the sensor in the scene
     * :code:`initial_pose`: Pose of the sensor in the scene
 
-.. image:: ../img/sensor_integration.png
+.. image:: ../../img/sensor_integration.png
 
 7. Click on :code:`Save` in the editor and here you are, your sensor is now integrated (i.e. you can see a state in the :code:`Task editor` tab that allows you to collect data from the referenced topics).
 8. Integrate the rest of your robot

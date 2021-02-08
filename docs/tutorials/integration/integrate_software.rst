@@ -44,7 +44,7 @@ Common steps
 7. Still in the file dialog, specify the **.srv** or **.action** file that defines your service or action (you can change the filter at the bottom of the file dialog)
 8. A partially filled template will appear in the editor. Fill :code:`server_name` with the name you gave to your service or action. Fill :code:`node_type` with the name of your node (C++ version) or with the name of your python file (**with .py**). Add the number of possible outcomes of your server (**must be an integer greater or equal than 1**). In the following example, we pointed to this `action file <https://github.com/ARQ-CRISP/EZGripper/blob/master/ezgripper_driver/action/ActuateGripper.action>`_ and this `server <https://github.com/ARQ-CRISP/EZGripper/blob/master/ezgripper_driver/nodes/ezgripper_controller.py>`_.
 
-.. image:: ../img/external_controller.png
+.. image:: ../../img/external_controller.png
 
 9. Hit the :code:`Save` button in the editor and here you are, your component is now integrated (i.e. you can see a state in the :code:`Task editor` tab that corresponds to your code). It means that your software will be run for you automatically!
 

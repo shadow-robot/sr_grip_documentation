@@ -23,7 +23,7 @@ Procedure
       ...
       joint_name_n: <value_n1>
 
-.. image:: ../img/joint_states.png
+.. image:: ../../img/joint_states.png
 
 .. note::
 

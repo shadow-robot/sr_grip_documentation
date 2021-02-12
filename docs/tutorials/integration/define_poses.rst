@@ -11,7 +11,7 @@ In this tutorial, we assume that a robot is already properly interfaced to GRIP 
 
 Procedure
 #########
-The same editor allows you to create both simple poses or to create poses for the robot's end-effector. After completing the common (and mandatory) steps, you can go to the corresponding subsections.
+The same editor allows you to create both simple poses or to create poses for the robot's end-effector. The latest is mainly useful when you want to define the pose of different fingers of a robot hand for instance. After completing the common (and mandatory) steps, you can go to the corresponding subsections.
 
 Common steps
 ************

@@ -22,7 +22,7 @@ Procedure
 2. Specify the URDF file of the robot to the framework
 3. Set the composition of your robot(s), i.e. how many arms, hands and sensors need to be configured. In this case we are going to set only one sensor, but you can have several sensors
 4. In the :code:`Settings` tab, in the :code:`Sensors config`, click on :code:`New` and save the file wherever you want
-5. In the margin, click on the :code:`+` symbol and enter the name of your sensor
+5. In the margin, click on the :code:`+` symbol and enter the name of your sensor. Another dialog window is going to ask you for a launch file that runs your sensor. If you don't have any please refer to step 9.
 6. A template will appear in the editor with the following fields:
     * :code:`data_topics`: Dictionary that must contain all the different data to collect with their associated topic
     * :code:`frame_id`: Name of the frame associated to the sensor in the scene
@@ -32,7 +32,7 @@ Procedure
 
 7. Click on :code:`Save` in the editor and here you are, your sensor is now integrated (i.e. you can see a state in the :code:`Task editor` tab that allows you to collect data from the referenced topics).
 8. Integrate the rest of your robot
-9. **Before** clicking on :code:`Launch robot`, make sure you run the node or launch file publishing the data on topics in another terminal. In our case, we would first run :code:`roslaunch kinect2_bridge kinect2_bridge.launch reg_method:=cpu depth_method:=opengl` before clicking on :code:`Launch robot`
+9. If you have not provided a launch file during step 5 (that's fine), make sure to run your node or launch file that starts the sensor **before** clicking on :code:`Launch robot`.
 
 .. note::
 

@@ -9,6 +9,7 @@ Hardware specifications
 #######################
 
 In order to run our software and the ROS software stack you will need to meet some hardware requirements.
+
 * CPU: Intel i5 or above
 * RAM: 4GB or above Hard Drive: Fast HDD or SSD (Laptop HDD can be slow)
 * Graphics Card: Nvidia GPU (optional)

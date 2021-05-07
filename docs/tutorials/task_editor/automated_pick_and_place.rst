@@ -14,7 +14,7 @@ A robot arm and gripper or hand integrated to GRIP, either :ref:`through MoveIt!
 Prerequisites
 #############
 
-In order to illustrate the same example both when the robot is integrated through MoveIt! and when one part of the robot is controlled by an external controller, we are going to use a UR5 robot arm with a EZGripper. If you want to replicate this tutorial, please clone `this repository <https://github.com/ARQ-CRISP/arq_ur5_ezgripper_moveit_config.git>`_ and `this one <https://github.com/ARQ-CRISP/EZGripper>`_ in :code:`/home/user/projects/shadow_robot/base/src`. Note that for the simulation of the EZGripper, you might want to clone this `repository <https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git>`_ as well. Now, compile them:
+In order to illustrate the same example both when the robot is integrated through MoveIt! and when one part of the robot is controlled by an external controller, we are going to use a UR5 robot arm with a EZGripper. If you want to replicate this tutorial, please clone `this repository <https://github.com/ARQ-CRISP/arq_ur5_ezgripper_moveit_config.git>`_, `this one <https://github.com/ARQ-CRISP/EZGripper>`_ and `this one <https://github.com/ARQ-CRISP/ARQ_common_packages>`_ in :code:`/home/user/projects/shadow_robot/base/src`. Note that for the simulation of the EZGripper, you might want to clone this `repository <https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git>`_ as well. Now, compile them:
 
 .. prompt:: bash $
 
@@ -84,7 +84,7 @@ In this section, we are going to carry out exactly the same task as in the previ
 2. Define your joint states and/or poses that correspond to where the robot should move during the task. In our case, we use exactly the same as the previous section.
 3. Launch the robot (you can either click on the :code:`Launch robot` button or use the shortcut :code:`Ctrl+l`)
 4. In the :code:`Task editor` tab, you should see a set of states ready to be used. You can drag and drop them into the editor area. In this tutorial we are going to use three of them: :code:`ComputePlan`, :code:`Move` and the state generated from the integrated controller (here :code:`EZGripperController`).
-5. Configure each state according to what you want to implement. Note that you can still take the most of the dropdown lists in generated states!
+5. Configure each state according to what you want to implement. Note that you can still take the most of the dropdown lists in the generated states!
 
 .. image:: ../../img/automatic_pick_place_external.png
 

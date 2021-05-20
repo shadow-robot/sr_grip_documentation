@@ -231,8 +231,8 @@ notfound_context = {
 # -- Options for Markdown output -------------------------------------------------
 # app setup hook
 def setup(app):
-    app.add_stylesheet('css/sphinx_prompt_css.css')
-    app.add_stylesheet('css/custom.css')
+    app.add_css_file('css/sphinx_prompt_css.css')
+    app.add_css_file('css/custom.css')
     app.add_config_value('recommonmark_config', {
         'auto_toc_tree_section': 'Contents',
         'enable_eval_rst': True,

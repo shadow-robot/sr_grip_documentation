@@ -41,6 +41,6 @@ Task design and execution
 **********************************************************************
 
 :ref:`Running an autonomous pick and place task <autonomous_pick_place>`
-**********************************************************************
+************************************************************************
 
 **In progress, the rest will be uploaded shortly!**

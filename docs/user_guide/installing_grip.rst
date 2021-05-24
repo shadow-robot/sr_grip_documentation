@@ -56,6 +56,13 @@ When running the one-liner, if you encounter an error saying:
 
 please run :code:`rm -rf ~/.local` (make sure to make a copy of important files if you have any) and re-run the one-liner.
 
+
+If you try to install GRIP on a machine with Ubuntu 16.04, please add the :code:`--branch v1.0.16` after :code:`docker_deploy`, as follows:
+
+.. prompt:: bash $
+
+    bash <(curl -Ls bit.ly/run-aurora) docker_deploy --branch v1.0.16 product=hand_e nvidia_docker=true tag=kinetic-v0.0.6 reinstall=true demo_icons=false desktop_icon=false ethercat_right_hand="" image=shadowrobot/grip_framework container_name=GRIP_test
+
 Running the container
 #####################
 

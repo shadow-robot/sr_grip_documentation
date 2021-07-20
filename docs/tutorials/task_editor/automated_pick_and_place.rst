@@ -44,7 +44,7 @@ Named joint states:
     ezgripper_knuckle_palm_L1_1: 0
 
   close_gripper:
-    ezgripper_knuckle_palm_L1_1: 1.94
+    ezgripper_knuckle_palm_L1_1: 1.93
 
 Named poses:
 

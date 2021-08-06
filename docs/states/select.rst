@@ -8,7 +8,7 @@ Select
 Outcomes
 ########
 
-| This state has two outcomes: :code:`success` (green socket) and :code:`failure` (red socket). If the configuration of the state is wrong, or that the ROS msg cannot be retrieved, the state will return the outcome :code:`failure`. Otherwise return :code:`success` and stores the retrived message in the :code:`userdata`.
+| This state has two outcomes: :code:`success` (green socket) and :code:`failure` (red socket). If the configuration of the state is wrong, or that the ROS msg cannot be retrieved, the state will return the outcome :code:`failure`. Otherwise return :code:`success` and stores the retrieved message in the :code:`userdata`.
 
 How to configure
 ################

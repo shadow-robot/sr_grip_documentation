@@ -14,7 +14,7 @@ What you need before starting
 
 Prerequisites
 #############
-Examples will be provided using the Franka Panda arm and gripper. If you want to replicate this tutorial, please clone this `repository <https://github.com/ARQ-CRISP/panda_moveit_config>`_, this `repository <https://github.com/ARQ-CRISP/panda_moveit_config>`_ and this `one <https://github.com/ARQ-CRISP/ARQ_common_packages>`_ in :code:`/home/user/projects/shadow_robot/base/src`. Then compile them
+Examples will be provided using the Franka Panda arm and gripper. If you want to replicate this tutorial, please clone this `repository <https://github.com/ARQ-CRISP/panda_moveit_config>`_, this `repository <https://github.com/ARQ-CRISP/franka_ros>`_ and this `one <https://github.com/ARQ-CRISP/ARQ_common_packages>`_ in :code:`/home/user/projects/shadow_robot/base/src`. Then compile them
 
 .. prompt:: bash $
 

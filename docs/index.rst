@@ -30,4 +30,5 @@ Table of contents
    user_guide/installing_grip
    user_guide/getting_started
    user_guide/tutorials
+   user_guide/states
    user_guide/resources

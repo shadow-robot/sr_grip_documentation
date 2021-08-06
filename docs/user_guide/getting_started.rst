@@ -79,6 +79,24 @@ Once you have configured everything you need, you can start designing your task!
 
 Task design and execution
 *************************
-**Overview coming soon, stay tuned!**
+| Now that you have interfaced a robot and all the methods you might want to run for a specific task, GRIPS allows you to efficiently and graphically design a wide range of tasks with the components you need!
+| If the robot configuration is valid, you should see the :code:`Task editor` enabled at the top left of your screen. If you click on it, you should see an interface similar to this one (some building blocks on the right might change)
 
-If everything is clear so far, you can move to the :ref:`tutorials <tutorials_list>`.
+
+.. image:: ../img/task_editor_illust.png
+
+| On the right hand side of the screen you should be able to see 2 tabs (:code:`States` and :code:`State Machines`), which both contain the different elements that you can use to articulate and design the task you want your robot to execute.
+| Each building block should have a name and a small description that helps you understand what it does. Please note that **the building blocks that are avaialble depend on your robot configuration**. In order to use them, you just need to drag-and-drop them inside the grey area. Once dropped, all the states will be represented as a box-like object with common elements.
+
+.. image:: ../img/task_editor_illust.png
+
+| As you can see, all the boxes that appear when you drop a state or a state machine have some sockets (colored circles). They allow you to link the different boxes (i.e. states) so you can easily handle the flow of of your task. So depending on the outcome of a state, you can choose what to do by linking the socket that represents this outcome to another state (more specifically its input socket). If don't know the principle behing state machines, you can have a look at `that <http://wiki.ros.org/smach/Tutorials/Getting%20Started>`_.
+
+.. note::
+  By default, the green socket represents the "success" outcome (i.e. the code ran without any error). The red socket represents the "error" outcome, meaning that something went wrong when executing the code.
+
+| For all the states (except ReinitialiseManager), you will see some editable slots that will allow you to configure the state to some extent. Note that some slots are directly linked to the robot configuration. For instance, using the drop-down menu of :code:`input type` in the state **Select** and set it to :code:`joint state`, you will be able to pick an element (for the slot :code:`input`) among all the joint states that you have registered during the integration stage!
+| You can double click on the name of a state (or right click on it and select :code:`Rename`) to rename it, as it can help to have a better grasp of what the state is doing at first glance, especially in large and complex behaviors. The editor area is interactive, meaning that you can move all the different objects as much as you want. Similarly, you can navigate inside the editor; you can zoom in and zoom out with the wheel of your mouse and move around by pressing on the wheel.
+| In order to execute a task, the sockets of **all** the states need to be connected to another socket. In order to link the :code:`Start` socket (big blue one, initially at the top of the screen) to another blue socket (of a state), please double click on the big socket and drag it to the target socket. For all the other sockets you just need to click once and drag to the target socket. **Once the flow of the state machine is correct**, you will see the icon on the top left corner of the main editor (first one that was open) turn green. This means that the state machine has a correct flow. **If the robot is running**, you will be able to execute the task by right-clicking in the maain editor and click on :code:`Execute`.
+
+| If everything is clear so far, you can move to the :ref:`tutorials <tutorials_list>`.

@@ -39,3 +39,6 @@ Commander states
 
 :ref:`ExecuteTrajectory <state_execute_trajectory>`
 ***************************************************
+
+:ref:`Move <state_move>`
+************************

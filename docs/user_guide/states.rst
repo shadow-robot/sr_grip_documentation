@@ -36,3 +36,6 @@ Commander states
 
 :ref:`ComputePlan <state_compute_plan>`
 ***************************************
+
+:ref:`ExecuteTrajectory <state_execute_trajectory>`
+***************************************************

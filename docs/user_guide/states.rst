@@ -42,3 +42,14 @@ Commander states
 
 :ref:`Move <state_move>`
 ************************
+
+Generated states
+################
+
+| When you are interfacing an :ref:`external component <integrate_software>` or a :ref:`sensor <integrate_sensor>`, GRIP will automatically generate the code of the corresponding states.
+
+:ref:`ExternalComponent <state_external_component>`
+***************************************************
+
+:ref:`Sensor <state_sensor>`
+****************************

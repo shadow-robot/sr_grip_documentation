@@ -1,4 +1,4 @@
-.. _reinitialise_managers:
+.. _state_reinitialise_managers:
 ********************
 ReinitialiseManagers
 ********************
@@ -18,4 +18,4 @@ How to configure
 Example of use
 ##############
 
-You can find a concrete example of how to use this state, :ref:`here <example_reinitialise_managers>`.
+You can find a concrete example of how to use this state, :ref:`here <example_state_reinitialise_managers>`.

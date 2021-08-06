@@ -1,4 +1,4 @@
-.. _example_reinitialise_managers:
+.. _example_state_reinitialise_managers:
 ************************************
 Using the ReinitialiseManagers state
 ************************************

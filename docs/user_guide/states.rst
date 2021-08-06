@@ -12,3 +12,6 @@ Constant states
 
 :ref:`Counter <state_counter>`
 ******************************
+
+:ref:`ReinitialiseManagers <reinitialise_managers>`
+***************************************************

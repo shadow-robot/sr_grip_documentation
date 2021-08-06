@@ -62,13 +62,10 @@ How to create a new state
 .. warning::
   All the interactive functionalities such as dropdown menu and automatic refresh of possible values for slots are **not** supported for external states.
 
-1. Decide where to store the state
-----------------------------------
+| For GRIP to directly account for your states, you can decide to add the source code of your state in :code:`/home/user/projects/shadow_robot/base/src/grip/grip_core/src/grip_core/states`.
 
-| TODO
-
-2. Content of the and name of the file
---------------------------------------
+.. warning::
+  Make sure to add your states here and **not** in the :code:`commander` folder! Otherwise GRIP may not run properly.
 
 | The content of any state you want to create should follow this template:
 
@@ -87,7 +84,7 @@ How to create a new state
         Small description of what the state does
       """
       # Change the argument_to_set by the name of the variable you want to be able to configure in the task editor
-      # You can also set default values, such as argument_to_set2=10
+      # You can also set default values, such as argument_to_set=10
       # The remaining arguments from outcomes onward MUST NOT BE REMOVED
       # You can add more outcomes if you want in he signature
       def __init__(self, argument_to_set1, argument_to_set2, outcomes=["success", "finished"], input_keys=[], output_keys=[], io_keys=[]):
@@ -120,6 +117,8 @@ How to create a new state
           # make sure to have them defined in outcomes in the class signature!!!
           return self.outcomes[0]
 
-.. warning::
+.. important::
   | Regardless of where you are storing the file, make sure to name the file following the underscore naming rule!
   | For instance if your state is named :code:`ComputeJointState`, the name of the file must be :code:`compute_joint_state.py`.
+
+You can find a concrete example of how to create a new state, :ref:`here <example_new_state>`.

@@ -31,5 +31,8 @@ Commander states
   | For these states to appear at least **one** MoveIt motion planner must be defined in the robot integration tab.
   | If **more than one** planner is defined, a configuration slot named :code:`group_name` will appear for all these states. It allows you to choose which part of the robot you wish to configure.
 
-:ref:`AllowCollisions <states_allow_collisions>`
-************************************************
+:ref:`AllowCollisions <state_allow_collisions>`
+***********************************************
+
+:ref:`ComputePlan <state_compute_plan>`
+***************************************

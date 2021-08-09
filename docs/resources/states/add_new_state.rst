@@ -11,6 +11,7 @@ Creating a new state
 In order to complete the aforementioned task, a valid implementation of the state would be:
 
 .. code-block:: python
+
   #!/usr/bin/env python
 
   import smach
@@ -22,55 +23,56 @@ In order to complete the aforementioned task, a valid implementation of the stat
 
   class GenerateRandomPose(smach.State):
 
-      """
-          State generating a random Pose msg within given boundaries
-      """
+    """
+        State generating a random Pose msg within given boundaries
+    """
 
-      def __init__(self, boundaries, reference_frame="world", output="generated_pose", outcomes=["success", "failure"],
-                   input_keys=[], output_keys=[], io_keys=[]):
-          """
-              Initialise the attributes of the class
+    def __init__(self, boundaries, reference_frame="world", output="generated_pose", outcomes=["success", "failure"],
+                 input_keys=[], output_keys=[], io_keys=[]):
+        """
+            Initialise the attributes of the class
 
-              @param output: String, specifying the name to set to the counter. Default is "counter"
-              @param outcomes: Possible outcomes of the state. Default "success" and "finished"
-              @param input_keys: List enumerating all the inputs that a state needs to run
-              @param output_keys: List enumerating all the outputs that a state provides
-              @param io_keys: List enumerating all objects to be used as input and output data
-          """
-          # Initialise the state
-          smach.State.__init__(self, outcomes=outcomes, io_keys=io_keys, input_keys=input_keys, output_keys=output_keys)
-          if not isinstance(boundaries, list) or len(boundaries) != 6:
-              rospy.logerr("\"Boundaries\" should be a list containing a total of 6 elements")
-          self.boundaries = boundaries
-          self.reference_frame = reference_frame
-          self.output = output
-          # Outcomes of the state
-          self.outcomes = outcomes
+            @param output: String, specifying the name to set to the counter. Default is "counter"
+            @param outcomes: Possible outcomes of the state. Default "success" and "finished"
+            @param input_keys: List enumerating all the inputs that a state needs to run
+            @param output_keys: List enumerating all the outputs that a state provides
+            @param io_keys: List enumerating all objects to be used as input and output data
+        """
+        # Initialise the state
+        smach.State.__init__(self, outcomes=outcomes, io_keys=io_keys, input_keys=input_keys, output_keys=output_keys)
+        if not isinstance(boundaries, list) or len(boundaries) != 6:
+            rospy.logerr("\"Boundaries\" should be a list containing a total of 6 elements")
+        self.boundaries = boundaries
+        self.reference_frame = reference_frame
+        self.output = output
+        # Outcomes of the state
+        self.outcomes = outcomes
 
-      def execute(self, userdata):
-          """
-              Randomly generate a new pose between the boundaries provided
+    def execute(self, userdata):
+        """
+            Randomly generate a new pose between the boundaries provided
 
-              @param userdata: Input and output data that can be communicated to other states
+            @param userdata: Input and output data that can be communicated to other states
 
-              @return: - outcomes[-1] ("failure" by default) if the configuration of the state is not correct
-                       - outcomes[0] otherwise
-          """
-          # Make sure the boundaries are float or integers, otherwise return the outcome failure
-          if any(not (isinstance(x, int) or isinstance(x, float)) for x in self.boundaries):
-              rospy.logerr("Boundaries should be integer or float")
-              return self.outcomes[-1]
-          # Generate the position from the boundaries
-          x = np.random.uniform(self.boundaries[0], self.boundaries[3])
-          y = np.random.uniform(self.boundaries[1], self.boundaries[4])
-          z = np.random.uniform(self.boundaries[2], self.boundaries[5])
-          # Generate the orientation of the pose randomly as well (could also be added to the configuration of the state)
-          roll, pitch, yaw = np.random.uniform(0, np.pi, size=3)
-          # Create the PoseStamped message using the utilities provided by GRIP
-          pose_msg = generate_pose_stamped_message(self.reference_frame, [x, y, z], [roll, pitch, yaw])
-          # Store the generated msg inside the userdata
-          userdata[self.output] = pose_msg
-          return self.outcomes[0]
+            @return: - outcomes[-1] ("failure" by default) if the configuration of the state is not correct
+                     - outcomes[0] otherwise
+        """
+        # Make sure the boundaries are float or integers, otherwise return the outcome failure
+        if any(not (isinstance(x, int) or isinstance(x, float)) for x in self.boundaries):
+            rospy.logerr("Boundaries should be integer or float")
+            return self.outcomes[-1]
+        # Generate the position from the boundaries
+        x = np.random.uniform(self.boundaries[0], self.boundaries[3])
+        y = np.random.uniform(self.boundaries[1], self.boundaries[4])
+        z = np.random.uniform(self.boundaries[2], self.boundaries[5])
+        # Generate the orientation of the pose randomly as well (could also be added to the configuration of the state)
+        roll, pitch, yaw = np.random.uniform(0, np.pi, size=3)
+        # Create the PoseStamped message using the utilities provided by GRIP
+        pose_msg = generate_pose_stamped_message(self.reference_frame, [x, y, z], [roll, pitch, yaw])
+        # Store the generated msg inside the userdata
+        userdata[self.output] = pose_msg
+        return self.outcomes[0]
+
 
 | Note that in this implementation, we made it so the state expects a list containing the boundaries as input. In other words, the boundaries must look like :code:`[min_x, min_y, min_z, max_x, max_y, max_z]`.
 

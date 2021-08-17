@@ -39,7 +39,7 @@ Common steps
 2. Set the URDF file, robot's composition and the MoveIt! configuration package (the latter is **optional** i.e. you don't need it to integrate your own software)
 3. Go to the editor in which you want to integrate your software in the tabs (:code:`Arm configuration`, :code:`Hand configuration` or :code:`Settings`)
 4. Create a new file in the selected one by clicking on :code:`New` and save the file wherever you want
-5. In the margin, click on the :code:`+` symbol and enter the name of your software in the dialog
+5. In the margin, click on the :code:`+` symbol and enter the name of your software in the dialog. **Make sure that the name you provide is different than the name of the .srv or .action file you provide in step 7.**
 6. In the file dialog, specify the C++ or Python file (you can change the filter at the bottom of the file dialog) corresponding to your server (either action or service)
 7. Still in the file dialog, specify the **.srv** or **.action** file that defines your service or action (you can change the filter at the bottom of the file dialog)
 8. A partially filled template will appear in the editor. Fill :code:`server_name` with the name you gave to your service or action. Fill :code:`node_type` with the name of your node (C++ version) or with the name of your python file (**with .py**). Add the number of possible outcomes of your server (**must be an integer greater or equal than 1**). In the following example, we pointed to this `action file <https://github.com/ARQ-CRISP/EZGripper/blob/master/ezgripper_driver/action/ActuateGripper.action>`_ and this `server <https://github.com/ARQ-CRISP/EZGripper/blob/master/ezgripper_driver/nodes/ezgripper_controller.py>`_.

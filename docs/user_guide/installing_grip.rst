@@ -88,4 +88,4 @@ To start the container, you just need to run
 Future releases
 ###############
 
-For now, the docker that you have downloaded contains Ubuntu 16.04 and ROS Kinetic. We are currently working on the release of the framework using Ubuntu 18.04 and ROS Melodic. Stay tuned!
+For now, the docker that you have downloaded contains Ubuntu 16.04 and ROS Kinetic. We are currently working on the release of the framework using Ubuntu 20.04 and ROS Noetic. This should be released in the next few days, so stay tuned!
